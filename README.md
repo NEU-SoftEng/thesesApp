@@ -9,6 +9,7 @@
 - Install [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) (can be found in vscode marketplace)
 
 #### Optional tools
+
 - Install [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) (can be found in vscode marketplace)
 
 ### 2. Clone Repository
