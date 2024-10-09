@@ -21,7 +21,7 @@ export default function Home() {
   }, [session, status, router]);
 
   if (status === "loading") {
-    return <p>Loading...</p>; // Display a loading message while checking the session
+    return <p>Loading...</p>;
   }
 
   if (!session) {
