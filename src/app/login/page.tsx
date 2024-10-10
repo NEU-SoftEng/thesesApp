@@ -1,22 +1,9 @@
-"use client"; 
+"use client";
 
-import { useSession, signIn } from "next-auth/react";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { signIn } from "next-auth/react";
 import Image from "next/image";
 
 export default function Login() {
-  const { data: session } = useSession();
-  const router = useRouter();
-
-  useEffect(() => {
-    if (session) {
-      router.push("/"); 
-    }
-  }, [session, router]);
-
-  if (session) return null;
-
   return (
     <div className="relative flex min-h-screen flex-col">
       <div className="flex h-10 items-center justify-center bg-[#0038AB] text-white"></div>
@@ -43,7 +30,7 @@ export default function Login() {
 
           <button
             className="flex items-center rounded-lg bg-[#0038AB] px-8 py-2 text-white transition hover:bg-blue-700"
-            onClick={() => signIn("google")}
+            onClick={() => signIn("google", {callbackUrl: "/"})}
           >
             <Image
               src="/google-logo.png"
