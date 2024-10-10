@@ -1,5 +1,6 @@
 "use client";
 
+import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -12,7 +13,7 @@ const links = [
 
 export const NavigationLinks = () => {
   const pathname = usePathname();
-
+  
   return links.map(({ href, label }) => (
     <Link
       key={href}
