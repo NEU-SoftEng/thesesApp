@@ -5,8 +5,6 @@ import { NavigationBar } from "@/components/common/NavigationBar";
 import { NewsUpdate } from "@/components/home/NewsUpdate";
 import Image from "next/image";
 
-export const runtime = "edge";
-
 export default function Home() {
   return (
     <>

@@ -3,8 +3,6 @@
 import { signIn } from "next-auth/react";
 import Image from "next/image";
 
-export const runtime = "edge";
-
 export default function Login() {
   return (
     <div className="relative flex min-h-screen flex-col">
