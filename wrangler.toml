@@ -1,7 +1,7 @@
 main = ".worker-next/index.mjs"
 name = "thesesapp"
 
-compatibility_date = "2024-09-23"
+compatibility_date = "2024-10-11"
 compatibility_flags = ["nodejs_compat_v2"]
 
 assets = { directory = ".worker-next/assets", binding = "ASSETS" }
@@ -9,3 +9,6 @@ assets = { directory = ".worker-next/assets", binding = "ASSETS" }
 [[kv_namespaces]]
 binding = "NEXT_CACHE_WORKERS_KV"
 id = "db2d4c3c79ad43b3aa664e9512111839"
+
+[vars]
+CLOUDFLARE_API_TOKEN = "t49znJHCkvaCg8RfDib1MySfksx0_WXQxSIaIoy8"
