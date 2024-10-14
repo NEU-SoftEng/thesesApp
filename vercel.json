@@ -1,5 +1,0 @@
-{
-  "buildCommand":"npx prisma generate; npm run build",
-  "regions": ["sin1"],
-  "version": 2
-}
