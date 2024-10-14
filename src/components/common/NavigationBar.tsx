@@ -2,7 +2,6 @@
 
 import { Library } from "lucide-react";
 import { signOut, useSession } from "next-auth/react";
-import { redirect } from "next/navigation";
 import { NavigationLinks } from "../home/NavigationLinks";
 
 export const NavigationBar = () => {
@@ -28,12 +27,9 @@ export const NavigationBar = () => {
               Sign Out
             </button>
           ) : (
-            <button
-              className="text-xl font-medium"
-              onClick={() => redirect("/login")}
-            >
-              Sign In
-            </button>
+            <a href="/login">
+              <button className="text-xl font-medium">Sign In</button>
+            </a>
           )}
         </div>
       </div>
